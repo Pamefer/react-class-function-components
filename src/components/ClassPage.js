@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Picture from './smallComponents/Picture';
-import Button from './smallComponents/Button';
+import ClassButton from './smallComponents/ClassButton';
 
 class ClassPage extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class ClassPage extends Component {
       pictures: [
         {id: 1, src: 'http://via.placeholder.com/200x100'},
         {id: 2, src: 'http://via.placeholder.com/400x200'},
-        {id: 3, src: 'http://via.placeholder.com/200x100'}
+        {id: 3, src: 'http://via.placeholder.com/600x100'}
       ],
       currentPic: null
     };
@@ -25,7 +25,7 @@ class ClassPage extends Component {
           {this.state.pictures.map((picture) => {
             return (
               <Picture key={picture.id} src={picture.src}>
-                <Button
+                <ClassButton
                   pictureSrc={picture.src}
                   setCurrentPic={this.setCurrentPic}
                   id={picture.id}

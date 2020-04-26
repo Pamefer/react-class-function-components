@@ -9,7 +9,10 @@ export default () => {
     <nav id="page-nav">
       <ul>
         <li>
-          <NavLink to="/classes" activeStyle={activeStyle} exact className="home-menu-item">Class component</NavLink>
+          <NavLink to="/class" activeStyle={activeStyle} exact className="home-menu-item">Class component</NavLink>
+        </li>
+        <li>
+          <NavLink to="/function" activeStyle={activeStyle} className="home-menu-item">Function component</NavLink>
         </li>
       </ul>
     </nav>
